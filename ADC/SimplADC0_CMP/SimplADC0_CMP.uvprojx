@@ -464,11 +464,6 @@
               <FilePath>..\..\SWM261_StdPeriph_Driver\CSL\SWM261_StdPeriph_Driver\SWM261_qei.c</FilePath>
             </File>
             <File>
-              <FileName>SWM261_sleep.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\SWM261_StdPeriph_Driver\CSL\SWM261_StdPeriph_Driver\SWM261_sleep.c</FilePath>
-            </File>
-            <File>
               <FileName>SWM261_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\SWM261_StdPeriph_Driver\CSL\SWM261_StdPeriph_Driver\SWM261_spi.c</FilePath>
