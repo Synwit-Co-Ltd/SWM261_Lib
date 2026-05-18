@@ -168,9 +168,7 @@ void GPIO_WriteBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w, uint32_t v)
 ******************************************************************************************************************************************/
 void GPIO_SetBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 {
-	uint32_t bits;
-	
-	bits = 0xFFFF >> (16 - w);
+	uint32_t bits = 0xFFFF >> (16 - w);
 	
 	GPIOx->ODR |= (bits << n);
 }
@@ -186,9 +184,7 @@ void GPIO_SetBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 ******************************************************************************************************************************************/
 void GPIO_ClrBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 {
-	uint32_t bits;
-	
-	bits = 0xFFFF >> (16 - w);
+	uint32_t bits = 0xFFFF >> (16 - w);
 	
 	GPIOx->ODR &= ~(bits << n);
 }
@@ -204,9 +200,7 @@ void GPIO_ClrBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 ******************************************************************************************************************************************/
 void GPIO_InvBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 {
-	uint32_t bits;
-	
-	bits = 0xFFFF >> (16 - w);
+	uint32_t bits = 0xFFFF >> (16 - w);
 	
 	GPIOx->ODR ^= (bits << n);
 }
@@ -223,9 +217,7 @@ void GPIO_InvBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 ******************************************************************************************************************************************/
 uint32_t GPIO_GetBits(GPIO_TypeDef * GPIOx, uint32_t n, uint32_t w)
 {
-	uint32_t bits;
-	
-   	bits = 0xFFFF >> (16 - w);
+	uint32_t bits = 0xFFFF >> (16 - w);
 	
 	return ((GPIOx->IDR >> n) & bits);
 }
